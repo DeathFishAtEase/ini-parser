@@ -74,6 +74,7 @@ namespace IniParser.Model.Configuration
             AllowDuplicateSections = ori.AllowDuplicateSections;
             AllowKeysWithoutSection = ori.AllowKeysWithoutSection;
             AllowCreateSectionsOnFly = ori.AllowCreateSectionsOnFly;
+            TrimProperties = ori.TrimProperties;
 
             SectionStartChar = ori.SectionStartChar;
             SectionEndChar = ori.SectionEndChar;
@@ -89,6 +90,16 @@ namespace IniParser.Model.Configuration
         public Regex CommentRegex { get; set; }
 
         public Regex SectionRegex { get; set; }
+
+        /// <summary>
+        ///     If set to true, the whitespace characters at both ends of every parsed key and value will be trimmed out.
+        ///     If set to false, all the whitespace characters of the line will be considered part of the property when
+        ///     extracting the key and the value.
+        /// </summary>
+        /// <remarks>
+        ///     Defaults to true.
+        /// </remarks>
+        public bool TrimProperties { get; set; } = true;
 
         /// <summary>
         ///     Sets the char that defines the start of a section name.

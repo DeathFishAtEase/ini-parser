@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>INIFileParser</AssemblyName>
+    <RootNamespace>IniParser</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>2.5.2</Version>
+    <Description>A .NET, Mono and Unity3d compatible(*) library for reading/writing INI data from IO streams, file streams, and strings written in C#.</Description>
+    <PackageProjectUrl>https://github.com/rickyah/ini-parser</PackageProjectUrl>
+    <PackageTags>ini</PackageTags>
+    <NoWarn>$(NoWarn);CS1591;CA1822</NoWarn>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+</Project>
